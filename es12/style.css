@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ddd;
+  color: white;
+
+  text-align: center;
+}
+
+h1 {
+
+  background: red;
+  color: white;
+
+  text-align: center;
+}
+
+.paganti {
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagante {
+
+  width: 200px;
+  height: 200px;
+
+  margin: auto;
+  padding: 20px;
+
+  border: 2px solid black;
+  background: white;
+}
