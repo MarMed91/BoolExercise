@@ -1,0 +1,59 @@
+
+LIBRERIA:
+libro:
+- Id -- INT -- PRIMARY KEY [ AUTO_INCREMENT, UNIQUE]
+- titolo -- VARCHAR(60) -- NOT NULL -- UNIQUE
+- genere -- VARCHAR(20) -- NOT NULL
+- genere -- VARCHAR(30) -- NOT NULL
+- prezzo -- FLOAT(6, 2) -- NOT NULL
+- recensioni -- TEXT -- NOT NULL
+- casa_editrice -- VARCHAR(50)
+- vendite -- INT -- DEFAULT = 0
+- Data publicazione -- DATE -- NOT NULL
+- ISBN -- VARCHAR(15) -- NOT NULL -- UNIQUE
+- Codice a barre (15) -- NOT NULL -- UNIQUE
+- pagine -- MEDIUMINT
+- riassunto -- TEXT/MEDIUMINT
+- magazzino -- SMALLINT
+- sottotitolo -- VARCHAR(100)
+
+Prestito:
+-Id -- INT -- PRIMARY KEY, -- AUTO_INCREMENT
+-Id_libro -- INT --
+-Id_persona -- INT --
+-Inizio
+-Fine
+
+Persona:
+-Id -- INT -- PRIMARY KEY, -- AUTO_INCREMENT
+Name -- VARCHAR(25)
+Cognome -- VARCHAR(20)
+
+User:
+- id
+- username
+- password
+
+          |  id  |  USERNAME  |   password  |
+          -----------------------------------
+             1      pippo        pippo123
+             2      marco        12345
+
+User det:
+- telefono
+- data di nascita
+- cart di credito
+- mail
+
+|   id   |   telefono  |        mail         |   cart di credito  |   data di nascita  |
+----------------------------------------------------------------------------------------
+   1        3278885430       pippo@gmil.com        pippo123              12/01/1965
+   2        3343339765       marco@gmil.com        12345                 30/04/1985
+
+
+Post :
+- id
+- titolo
+- testo
+- img
+- dataora
